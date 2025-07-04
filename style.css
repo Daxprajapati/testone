@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-one{
+/* border: 3px solid green; */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.123);
+}
+.card{
+    height: 50vh;
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.aaa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card button{
+    width: 25%;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.card input{
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card label{
+    font-size: 25px;
+}

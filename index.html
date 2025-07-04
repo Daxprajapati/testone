@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+
+    <!-- section-one -->
+    <div class="container-fluid section-one">
+        <div class="container">
+            <div class="row aaa">
+                <div class=" col-sm-6 card">
+
+                    <label for="name">Enter Your Name:</label>
+                    <input class="bb" type="text" id="qq" placeholder="name">
+
+                    <button onclick="output()">Get Greeting</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        function output() {
+            let now = new Date();
+            let hours = now.getHours();
+            let dd = document.querySelector('.bb')
+
+            if (hours >= 5 && hours < 12) {
+                alert(dd.value +' '+ "Good Morning");
+            } else if (hours >= 12 && hours < 17) {
+                alert(dd.value +' ' + "Good Afternoon");
+            } else if (hours >= 17 && hours < 20) {
+                alert(dd.value +' ' + "Good Evening");
+            } else {
+                alert(dd.value +' ' + "Good Night");
+            }
+        }
+
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
